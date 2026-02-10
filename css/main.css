@@ -2413,6 +2413,7 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.5rem;
 	text-align: center;
+	background-color: white;
 }
 .contact-info .collapse {
 	padding: 0;
@@ -2597,3 +2598,131 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+<style>
+/* Swiper container */
+.myPortfolio {
+  width: 90%;
+  max-width: 600px; /* optional: keeps carousel from being too wide on large screens */
+  margin: 40px auto;
+}
+
+/* Center slides properly */
+.swiper-slide {
+  display: flex !important;        /* ensures flex works even if Swiper adds inline styles */
+  justify-content: center !important; /* horizontal centering */
+  align-items: center;             /* vertical centering */
+}
+
+/* Card styling */
+.folio-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.folio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Even image size & centered */
+.folio-img {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;       /* same height for all slides */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;      /* horizontal centering */
+}
+
+/* Content styling */
+.folio-content {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.folio-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+.folio-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #0d6efd;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+</style>
+<style>
+.contact-info-section {
+  background-color: #ffffff; /* white background */
+  padding: 60px 20px;        /* space around content */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* optional: subtle shadow */
+}
+
+.contact-info-section .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-info-section .col-four {
+  flex: 1 1 30%;    /* responsive 3-column layout */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-info-section .icon {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.contact-info-section h5 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-info-section a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.contact-info-section a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .contact-info-section .col-four {
+    flex: 1 1 100%;
+  }
+}
+</style>
