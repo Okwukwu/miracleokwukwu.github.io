@@ -29,7 +29,6 @@
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="a.png">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </head>
 
@@ -103,68 +102,98 @@
    		</div>  
 
 
-	<!-- Portfolio Section
-   ================================================== -->
-	<section id="portfolio">
+
+<!-- Portfolio Section
+================================================== -->
+<section id="portfolio">
 
   <div class="row section-intro">
     <div class="col-twelve">
+
       <h5>Projects</h5>
+
       <h1>Check Out Some of My Works</h1>
-    </div>   		
+
+      <p class="lead">
+        A selection of healthcare data analysis, research and visualization
+        projects demonstrating how I use data to generate meaningful insights.
+      </p>
+
+    </div>
   </div>
 
-  <!-- Swiper Carousel -->
-  <div class="swiper myPortfolio">
-    <div class="swiper-wrapper">
 
-      <!-- PROJECT 1 -->
-      <div class="swiper-slide">
-        <div class="folio-card">
-          <img src="images/images.jpg" alt="Exploratory Analysis" class="folio-img">
-          <div class="folio-content">
-            <h3>Exploratory Analysis of Healthcare Operation</h3>
-            <p>Python (Numpy & Pandas) • Jupyter Notebook</p>
-            <a class="btn" href="#modal-01">View Details</a>
-          </div>
-        </div>
-      </div>
+  <!-- PROJECT 1 -->
+  <div class="row project-item">
 
-      <!-- PROJECT 2 -->
-      <div class="swiper-slide">
-        <div class="folio-card">
-          <img src="images/Malaria_Juice.avif" alt="Global Malaria Burden" class="folio-img">
-          <div class="folio-content">
-            <h3>Global Malaria Burden Analysis (2000–2022)</h3>
-            <p>Excel • Power BI • Data Visualization</p>
-            <a class="btn" href="#modal-02">View Details</a>
-          </div>
-        </div>
-      </div>
+    <span class="project-number">01</span>
+    <h2>Exploratory Analysis of Healthcare Operations</h2>
+    <div class="col-six project-image">
+      <img src="images/EXPLORATORY.jpg"
+           alt="Exploratory Analysis of Healthcare Operations">
+    </div>
+      
+        <strong>Tools:</strong> Python • NumPy • Pandas • Jupyter Notebook
+      </p>
 
-      <!-- PROJECT 3 -->
-      <div class="swiper-slide">
-        <div class="folio-card">
-          <img src="images/portfolio/HIV.jpg" alt="Global Trends in HIV" class="folio-img">
-          <div class="folio-content">
-            <h3>Global Trends in HIV</h3>
-            <p>Data Visualization</p>
-            <a class="btn" href="#modal-03">View Details</a>
-          </div>
-        </div>
-      </div>
+      <a class="button" href="https://github.com/Okwukwu/Exploratory-Analysis-of-Healthcare-Operations-Using-Python">View Project</a>
+    </div>
+
+  <!-- PROJECT 2 -->
+  <div class="row project-item">
+
+    <span class="project-number">02</span>
+     <h2>Global Malaria Burden Analysis (2000–2022)</h2>
+    <div class="col-six project-image">
+      <img src="images/Malaria_Juice.avif"
+           alt="Global Malaria Burden Analysis">
+    </div>
+
+        <strong>Tools:</strong> Excel • Power BI • Data Visualization
+      </p>
+
+       <a href="project folder/Global Malaria Burden Analysis (2000–2022).html" class="button">
+    View Project
+      </a>
 
     </div>
 
-    <!-- Pagination & Arrows -->
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
 
-</section>
+  <!-- PROJECT 3 -->
 
-<!-- ===== CAROUSEL END ===== -->
+  <span class="project-number">03</span>
+
+      <h2>Global Trends in HIV</h2>
+  <div class="row project-item">
+    <div class="col-six project-image">
+      <img src="images/HIV_2.cms"
+           alt="Global Trends in HIV">
+    </div>
+
+        <strong>Tools:</strong> Excel • Data Analysis • Data Visualization
+      </p>
+
+      <a href="project folder\Global Trends in HIV.html" class="button">
+    View Project
+</a>
+
+    </div>
+
+    <!-- PROJECT 4 -->
+  <div class="row project-item">
+
+    <span class="project-number">04</span>
+    <h2>Statiscal analysis of U.S air quality</h2>
+    <div class="col-six project-image">
+      <img src="images/AIR QUALITY.jpg"
+           alt="Statiscal analysis of U.S air quality">
+    </div>
+      
+        <strong>Tools:</strong> Python • NumPy • Pandas • •Scipy • Matplot • Seaborn • Statsmodels • Jupyter Notebook
+      </p>
+
+      <a class="button" href="https://github.com/Okwukwu/Statistical-Analysis-of-Air-Quality">View Project</a>
+    </div>
 
 </section>
 
@@ -180,7 +209,7 @@
 
    			<p class="lead">I'm willing and readily available to work on your next project.<br>
 
-			Also, I'm open to collaboration and if you've any questions feel free to message me❤️<br>
+			Also, I'm open to collaboration and if you've any questions feel free to message me<br>
 				
 			Kind regards,<br>
 			miracle okwukwu.</p>
@@ -193,6 +222,7 @@
    		<div class="col-twelve">
 
            <form action="https://formsubmit.co/miracleokwukwu@gmail.com" method="POST">
+
 
 <input type="hidden" name="_subject" value="New Contact from Portfolio">
 <input type="hidden" name="_captcha" value="false">
@@ -317,27 +347,22 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
-
-
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-   <script>
+<script>
 const swiper = new Swiper('.myPortfolio', {
   loop: true,
-  slidesPerView: 1,       // always 1 slide at a time
-  centeredSlides: true,   // this centers the active slide
+  slidesPerView: 1,
+  centeredSlides: true,
   spaceBetween: 30,
-  autoplay: {
-    delay: 4000,
-  },
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+  }
 });
 </script>
 
